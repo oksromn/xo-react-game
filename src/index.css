@@ -97,3 +97,27 @@ ol, ul {
   box-shadow: inset 0 0 0 5px #fff;
   transform: translate3d(0, 0, 2em);
 }
+
+.git-icon {
+  animation: 5s linear 0s normal none infinite running git-icon ;
+  -webkit-animation: 5s linear 0s normal none infinite running git-icon ;
+  width: min-content;
+  margin: 0 auto;
+}
+
+@keyframes git-icon  {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes git-icon  {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

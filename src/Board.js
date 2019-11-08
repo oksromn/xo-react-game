@@ -1,5 +1,7 @@
 import React from 'react'
 import Square from "./Square";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default class Board extends React.Component {
 
@@ -68,6 +70,11 @@ export default class Board extends React.Component {
 
         return (
             <React.Fragment>
+                <a href="https://github.com/oksromn/xo-react-game" target="_blank">
+                    <div className="git-icon">
+                        <FontAwesomeIcon icon={faGithub} size="4x"/>
+                    </div>
+                </a>
                 <div className="status">
                     <span> {status} </span>
                 </div>
